@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+  
+# make tab completion case insensitive
+set completion-ignore-case On
+
+# set default editing mode as vi (validate with .selected_editor method)
+set editing-mode vi

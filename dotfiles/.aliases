@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+  
+# typing clear now fully clears terminal
+alias clear="clear && printf '\e[3J'"

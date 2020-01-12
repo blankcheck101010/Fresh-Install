@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# used for python imports
+export PYTHONPATH="${PYTHONPATH}:/Users/saul.alvarez/Documents/BitBucket/DataArchitecture/core"
+export PYTHONPATH="${PYTHONPATH}:/Users/saul.alvarez/Documents/BitBucket/DataArchitecture/tests"
+
+# silence "the default interactive shell is now zsh" message in Catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Make vim the default editor.
+export EDITOR='vim'
+
