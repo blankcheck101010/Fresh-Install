@@ -44,8 +44,13 @@ brew cask install google-backup-and-sync
 mkdir ~/Documents/GitHub
 cd ~/Documents/GitHub
 git clone https://github.com/blankcheck101010/Fresh-Install.git
+cd ~/Documents/GitHub/Fresh-Install
 git fetch
 git branch develop
 git checkout develop
 git pull origin develop
 git branch --set-upstream-to origin/develop
+
+cd ~/Documents/GitHub
+git clone https://github.com/blankcheck101010/Sublime.git
+cd ~/Documents/GitHub/Sublime
