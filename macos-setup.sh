@@ -40,17 +40,30 @@ brew cask install atom
 brew cask install hyperdock
 brew cask install google-backup-and-sync
 
-# GitHub Setup
+
+### GitHub Setup ###
+# setup Fresh-Install Repo
 mkdir ~/Documents/GitHub
 cd ~/Documents/GitHub
 git clone https://github.com/blankcheck101010/Fresh-Install.git
 cd ~/Documents/GitHub/Fresh-Install
-git fetch
 git branch develop
 git checkout develop
+git fetch --all
+git reset --hard origin/develop  # this resolves any conflicts with master
 git pull origin develop
 git branch --set-upstream-to origin/develop
 
+# setup Sublime Repo
 cd ~/Documents/GitHub
 git clone https://github.com/blankcheck101010/Sublime.git
 cd ~/Documents/GitHub/Sublime
+git branch develop
+git checkout develop
+git fetch --all
+git reset --hard origin/develop  # this resolves any conflicts with master
+git pull origin develop
+git branch --set-upstream-to origin/develop
+
+### Sublime Setup ###
+# to finish installations, see setup script in Sublime Github Repo
