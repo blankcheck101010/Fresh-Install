@@ -67,3 +67,6 @@ git branch --set-upstream-to origin/develop
 
 ### Sublime Setup ###
 # to finish installations, see setup script in Sublime Github Repo
+
+# when you push for the first time, you must do it from terminal
+# enter your username and password. Then you can do it from sublimetext3
