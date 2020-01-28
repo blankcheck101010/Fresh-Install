@@ -2,7 +2,7 @@ import plistlib
 import os.path
 from xml.etree import ElementTree as ET
 
-PREFERENCE_DIR = os.path.join(os.getenv("HOME"), "desktop")
+PREFERENCE_DIR = os.path.join(os.getenv("HOME"), "Library/Preferences")
 
 
 def partial_read_plist(filepath, *args):
