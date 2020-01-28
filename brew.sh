@@ -3,7 +3,7 @@
 # Install Brew Packages
 brew install bash
 brew install git
-brew install python
+brew install python3
 brew install tree
 
 # install applications with Cask
