@@ -17,3 +17,6 @@ export PS1;
 
 # setup vim to be used automatically in bash
 set -o vi
+
+# When searching terminal history with ctrl + r, this allows you to use ctrl + s to cycle forward 
+stty -ixon
