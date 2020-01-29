@@ -5,8 +5,7 @@
 
 ############################
 
-# files="exports bashrc aliases inputrc selected_editor vimrc"
-files="exports bashrc aliases inputrc selected_editor vimrc"
+files="aliases bashrc exports inputrc selected_editor vimrc"
 
 
 DOTFILESDIR=$HOME/Documents/GitHub/Fresh-Install/dotfiles
