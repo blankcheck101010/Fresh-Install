@@ -4,6 +4,9 @@
 export PYTHONPATH="${PYTHONPATH}:$HOME/Documents/BitBucket/DataArchitecture/core"
 export PYTHONPATH="${PYTHONPATH}:$HOME/Documents/BitBucket/DataArchitecture/tests"
 
+# used for terraform
+export PATH="$PATH:$HOME/Applications"
+
 # silence "the default interactive shell is now zsh" message in Catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
