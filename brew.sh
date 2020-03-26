@@ -5,6 +5,7 @@ brew install bash
 brew install git
 brew install python3
 brew install tree
+brew install autojump
 
 # install applications with Cask
 brew cask install slack
