@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Run this bash script manually. 'bash macos-setup.sh'
+# If this is an M1, run terminal using rosetta
 
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
