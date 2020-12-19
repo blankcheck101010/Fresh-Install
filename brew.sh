@@ -14,6 +14,7 @@ brew cask install sublime-text
 brew cask install atom
 brew cask install hyperdock
 brew cask install google-backup-and-sync
+brew cask install iina
 
 #### FIND OUT THE CORRECT FONTS TO INSTALL!
 # Install Source Code Pro Font
