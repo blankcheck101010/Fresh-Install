@@ -8,13 +8,24 @@ brew install tree
 brew install autojump
 
 # install applications with Cask
-brew cask install slack
-brew cask install google-chrome
-brew cask install sublime-text
-brew cask install atom
-brew cask install hyperdock
-brew cask install google-backup-and-sync
-brew cask install iina
+brew install --cask slack
+brew install --cask atom
+brew install --cask google-chrome
+brew install --cask sublime-text
+brew install --cask hyperdock
+brew install --cask google-backup-and-sync
+brew install --cask iina
+brew install --cask skype
+brew install --cask spotify
+brew install --cask cyberduck
+brew install --cask postman
+brew install --cask private-internet-access
+brew install --cask pycharm-ce
+brew install --cask onedrive  # requires mac admin password
+curl -O https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip; mv ./lghub_installer.zip ~/desktop
+# for Affinity Photo download from google drive. saul@g.ucla.edu
+    # https://drive.google.com/drive/u/1/folders/1sL9vvraPd2U7Ip6IqoPrEuvPvEDzMy0S
+
 
 #### FIND OUT THE CORRECT FONTS TO INSTALL!
 # Install Source Code Pro Font

@@ -26,7 +26,7 @@ defaults write "com.todoist.mac.Todoist" ShowTodoistMenuBar -bool false
 
 ### GitHub Setup ###
 # setup Fresh-Install Repo and Dotfiles
-mkdir ~/Documents/GitHub
+mkdir -p ~/Documents/GitHub
 cd ~/Documents/GitHub
 # Git requires xcode
 git clone https://github.com/blankcheck101010/Fresh-Install.git
