@@ -21,10 +21,6 @@ brew install --cask cyberduck
 brew install --cask postman
 brew install --cask private-internet-access
 brew install --cask pycharm-ce
-brew install --cask onedrive  # requires mac admin password
-curl -O https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip; mv ./lghub_installer.zip ~/desktop
-# for Affinity Photo download from google drive. saul@g.ucla.edu
-    # https://drive.google.com/drive/u/1/folders/1sL9vvraPd2U7Ip6IqoPrEuvPvEDzMy0S
 
 
 #### FIND OUT THE CORRECT FONTS TO INSTALL!
