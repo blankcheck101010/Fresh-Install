@@ -13,7 +13,6 @@ brew install --cask atom
 brew install --cask google-chrome
 brew install --cask sublime-text
 brew install --cask hyperdock
-brew install --cask google-backup-and-sync
 brew install --cask iina
 brew install --cask skype
 brew install --cask spotify
@@ -22,6 +21,8 @@ brew install --cask postman
 brew install --cask private-internet-access
 brew install --cask pycharm-ce
 
+# Install this manually. Has issues with M1 BigSur
+# brew install --cask google-backup-and-sync
 
 #### FIND OUT THE CORRECT FONTS TO INSTALL!
 # Install Source Code Pro Font
