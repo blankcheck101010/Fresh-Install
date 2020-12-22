@@ -47,7 +47,7 @@ $HOME/Documents/GitHub/Fresh-Install/brew.sh
 # Must install bash first to get updated filepath (/usr/local/bin/bash) used below
 chsh -s /usr/local/bin/bash
 
-# Dofiles Setup (requires bash to work correctly)
+# Dofiles Setup (requires bash. Doesn't work correctly with zsh)
 chmod +x $HOME/Documents/GitHub/Fresh-Install/dotfiles/dotfiles-setup.sh
 $HOME/Documents/GitHub/Fresh-Install/dotfiles/dotfiles-setup.sh
 
