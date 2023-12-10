@@ -1,0 +1,39 @@
+source ~/.vimrc
+" Plugins
+set surround
+set highlightedyank
+set ideajoin
+set NERDTree
+
+
+vmap sS
+
+""" The Escape button
+map <C-c> <Esc>
+
+set selectmode=key
+set keymodel=startsel
+set idearefactormode=keep
+
+
+nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>r :action RecentFiles<CR>
+nnoremap <leader>l :action RecentLocations<CR>
+
+nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
+
+nnoremap gc :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GoToDeclaration<CR>
+nnoremap gp :action GoToSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
+
+" Tool windows
+nnoremap <c-p> :action JumpToLastWindow<CR>
+nnoremap <c-x> :action HideAllWindows<CR>
+
+" Yank to system clipboard
+set clipboard=unnamedplus
