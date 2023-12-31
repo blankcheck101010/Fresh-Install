@@ -1,0 +1,66 @@
+A place to store hotkeys!
+
+TERMINAL HOTKEYS
+Ctrl+L --> Clear Screen
+Ctrl+A --> Jump to beginning of line
+Ctrl+E --> Go to end of line
+Ctrl+D --> Delete right of cursor
+Ctrl+K --> Kill entire line from cursor
+Ctrl+U --> Clear entire line 
+
+ITERM Hotkeys
+Option+Cmd+C --> include styles/fonts in copy
+
+
+VIM HOTKEYS
+<leader>=" "
+
+// Copy yanked to temp, so you can paste across terminals
+<leader>y
+<leader>p
+
+// VIM .ideavimrc HOTKEYS (For INTELLIJ)
+gb --> go back
+gf --> go forward
+<leader>r --> Recent Files
+<leader>l --> Recent Locations
+
+INTELLIJ HOTKEYS
+// CODE
+Ctrl+Enter --> populate possible props options
+Ctrl+Z --> toggle focus mode
+Ctrl+Cmd+F --> toggle full screen mode
+Cmd+1 --> shortcut to projects pane
+Ctrl+T --> go to terminal
+Shift+Esc --> close terminal
+Cmd+D --> compare selected files
+Enter --> Normal mode - go to next line while staying in normal mode
+Shift+Enter --> Normal mode - insert line below
+Option+Tab --> Toggle between splitters in split pane
+Option+Shift+Tab --> Toggle previous splitter
+Cmd+Cmd(hold) --> While in focus mode - Quickly show left menu bar
+
+// From Sublime
+vil --> select line
+Ctrl+Cmd+G --> select all
+Cmd+G --> select next
+Shift+Cmd+G --> select previous
+
+
+TERRAFORM HOTKEYS
+tg=terragrunt
+tga=terragrunt apply
+tgc=terragrunt console
+tgd=terragrunt destroy
+tgf=terragrunt fmt
+tgi=terragrunt init
+tgo=terragrunt output
+tgp=terragrunt plan
+tgv=terragrunt validate
+
+MAC OS SYSTEM HOTKEYS
+Cmd+Delete - Delete from cursor to BOL
+Option+Delete - Delete word
+Fn+Delete - Delete char right of cursor
+
+Cmd+Option+. - view hidden files for finder MacOS

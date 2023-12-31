@@ -1,0 +1,29 @@
+# An example global gitignore file
+#
+# Place a copy if this at ~/.gitignore_global
+# Run `git config --global core.excludesfile ~/.gitignore_global`
+
+# IDE files #
+#############
+.vscode
+.idea
+.iml
+*.sublime-workspace
+
+
+# Ansible Files #
+#################
+# playbooks/tableau_bootstrap.yml
+# playbooks/tableau_bootstrap_failover.yml
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
