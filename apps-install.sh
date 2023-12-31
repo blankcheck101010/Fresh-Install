@@ -17,8 +17,14 @@ brew install --cask spotify
 # Login to sync your settings
 brew install --cask jetbrains-toolbox
 
+# Install autojump
+brew install autojump
+
 # Use to install discord
 brew install --cask discord
+
+# setup ohmyzsh
+brew install zsh
 
 # Microsoft Office includes OneDrive
 brew install --cask microsoft-office
