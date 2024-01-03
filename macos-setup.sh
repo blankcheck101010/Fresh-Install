@@ -1,6 +1,16 @@
 # steps to get started with vanilla Mac install
 
 # MANUAL STEPS
+# Install Homebrew from this website https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Update and Upgrade Homebrew
+brew update
+brew upgrade
+
 # login to icloud first
 # TODO: Test if you need to manually login to the appstore after logging into icloud
 
@@ -28,15 +38,17 @@ source ./utils/helpers.sh
 
 setupGitConfig
 
-# Install Homebrew from this website https://brew.sh/
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# install and setup ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# powerlevel10k (Might not be needed?)
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+# autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Update and Upgrade Homebrew
-brew update
-brew upgrade
+# remove backup if no longer needed
+# Run `ls -la ~/ | grep oh` and remove the .zshrc.pre-oh-my-zsh
 
 # can now run apps-install.sh
 
