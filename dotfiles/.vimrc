@@ -18,14 +18,10 @@ vnoremap <leader>c :.!capitalize-title -<CR>
 " select line without leading spaces
 nnoremap vil ^vg_
 
-" copy text highlighted with visual using cmd+c
-" works with iterm2 only. Adjust settings in iterm2 as shown below
-" https://www.dfurnes.com/notes/binding-command-in-iterm
-vnoremap <C-c> "+y
-
-" Copy yanked to temp, so you can paste across terminals
-vmap <leader>y :w! /tmp/vitmp<CR>
-nmap <leader>p :r! cat /tmp/vitmp<CR>
+" copy text highlighted with visual using cmd+c in iterm2
+" iTerm → Preferences → Keys → Key Bindings
+" Action should be "Send Escape Sequence" then map cmd+c→[1;5C
+vnoremap <Esc>[1;5C "+y
 
 " Yank to system clipboard
 set clipboard=unnamed
