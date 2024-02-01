@@ -36,7 +36,10 @@ brew install -- cask google-drive
 brew install --cask logitech-g-hub
 
 # Package manager
-brew install rtx
+brew install mise
+
+# install rectangle
+brew install --cask rectangle
 
 # install iterm2
 brew install --cask iterm2
