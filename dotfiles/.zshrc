@@ -142,9 +142,37 @@ source $ZSH/oh-my-zsh.sh
 set -o vi
 bindkey -v
 
+######################### zsh options ################################
+setopt ALWAYS_TO_END           # Push that cursor on completions.
+setopt AUTO_NAME_DIRS          # change directories to variable names
+setopt AUTO_PUSHD              # push directories on every cd
+setopt NO_BEEP                 # self explanatory
+
+######################### history options ############################
+setopt EXTENDED_HISTORY        # store time in history
+setopt HIST_EXPIRE_DUPS_FIRST  # unique events are more usefull to me
+setopt HIST_VERIFY             # Make those history commands nice
+setopt INC_APPEND_HISTORY      # immediatly insert history into history file
+HISTSIZE=16000                 # spots for duplicates/uniques
+SAVEHIST=15000                 # unique events guarenteed
+HISTFILE=~/.history
+setopt histignoredups          # ignore duplicates of the previous event
+
+### navigating terminal history
+# toggle through history based on what you have typed out
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
+# setup with vim
+bindkey -M vicmd 'k' history-beginning-search-backward
+bindkey -M vicmd 'j' history-beginning-search-forward
+
 # Allows you to search terminal history with ctrl + r
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+# setup ability to toggle results with vim
+bindkey -M isearch 'k' history-incremental-pattern-search-backward
+bindkey -M isearch 'j' history-incremental-pattern-search-forward
+### end terminal history
 
 # case insensitive autocomplete
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
