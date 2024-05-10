@@ -32,7 +32,6 @@ nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
 
 " Tool windows
-nnoremap <c-p> :action JumpToLastWindow<CR>
 nnoremap <c-x> :action HideAllWindows<CR>
 
 " Yank to system clipboard
